@@ -47,3 +47,4 @@ def index():
     return render_template("index.html", answer=answer, question=question)
 if __name__ == '__main__':
     app.run(debug=True)
+print("Loaded API Key:", API_KEY)
