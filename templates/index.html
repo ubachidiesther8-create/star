@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemini Question Answering</title>
+    <title>Groq LLM Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Ask a Question</h1>
-    <form method="post">
-        <input type="text" name="question" required>
-        <button type="submit">Ask</button>
-    </form>
-    {% if question %}
-    <h2>Question:</h2>
-    <p>{{ question }}</p>
-    <h2>Answer:</h2>
-    <p>{{ answer }}</p>
-    {% endif %}
+    <div class="container">
+        <h1>Groq Chat</h1>
+
+        <form method="POST" class="chat-form">
+            <textarea name="question" placeholder="Type your question..." required>{% if question %}{{ question }}{% endif %}</textarea>
+            <button type="submit">Ask</button>
+        </form>
+        {% if answer %}
+        <div class="chat-box user-box">
+            <p>{{ question }}</p>
+        </div>
+        <div class="chat-box ai-box">
+            <span class="arrow"></span>
+            <p>{{ answer }}</p>
+        </div>
+        {% endif %}
+    </div>
 </body>
 </html>
