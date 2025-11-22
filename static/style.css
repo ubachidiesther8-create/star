@@ -1,6 +1,6 @@
 body {
     background-color: #f8d6d9;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     padding: 50px 0;
@@ -16,6 +16,7 @@ h1 {
     text-align: center;
     color: #b3475f;
     margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive;
 }
 .chat-form textarea {
     width: 100%;
@@ -23,7 +24,8 @@ h1 {
     border: 2px solid #b3475f;
     border-radius: 10px;
     padding: 10px;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
     resize: none;
 }
 .chat-form button {
@@ -34,7 +36,8 @@ h1 {
     background-color: #b3475f;
     color: white;
     border-radius: 10px;
-font-family: 'Lucida Handwriting', cursive;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
     font-size: 18px;
     cursor: pointer;
 }
@@ -47,6 +50,8 @@ font-family: 'Lucida Handwriting', cursive;
     margin-top: 20px;
     position: relative;
     font-size: 18px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
 }
 .user-box {
     background-color: #fff0f2;
